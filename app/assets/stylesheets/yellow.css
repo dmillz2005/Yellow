@@ -1,0 +1,33 @@
+body {
+    background-color: #3878f0;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;}
+ 
+ 
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+
+.column{
+height: 50px;
+width:150px;
+background-color:white;
+margin-right:100px;
+margin-left:10px;
+align-content:center;
+padding: 30px; 
+border-radius: 5px;
+border-color:gray;
+border-width: thin;
+border-style: solid
+}
+
+
+.container{
+    margin:20px;
+    width:230px;
+    background-color:rgb(199, 199, 199) ;
+    padding: 10px;
+    border-radius: 5px;
+}

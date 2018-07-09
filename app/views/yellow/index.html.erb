@@ -1,0 +1,45 @@
+
+<center>
+<h1 style="color:lightblue;font-family:Helvetica"> Yello</h1></center>
+<div class="container">
+<h2>To do</h2>
+    <div id="sortable">
+   
+<% @columns.each do |column| %>
+
+    <div class="column"><%= column.title %><br>
+    <%= button_to 'Delete', column_path(column),
+    method: :delete %></div>
+    <% end %></div>
+    <%= form_with model: @column,url:yellow_create_url, local: true do |form| %>
+        <p>
+         <%= form.label :"Card Text" %> 
+        <%= form.text_field :title %>
+        </p>
+        <p>
+        <%= form.submit "Add Card" %>
+        </p>
+    </div>
+    <div id="sortable">
+   
+    <% @columns.each do |column| %>
+    
+        <div class="column"><%= column.title %><br>
+        <%= button_to 'Delete', column_path(column),
+        method: :delete %></div>
+        <% end %></div>
+        <%= form_with model: @column,url:yellow_create_url, local: true do |form| %>
+            <p>
+             <%= form.label :"Card Text" %> 
+            <%= form.text_field :title %>
+            </p>
+            <p>
+            <%= form.submit "Add Card" %>
+            </p>
+        </div>
+        <% end %>
+
+
+
+
+<% end %>
